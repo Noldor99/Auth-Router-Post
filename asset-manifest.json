@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Auth-Router-Post/static/css/main.e6c13ad2.css",
+    "main.js": "/Auth-Router-Post/static/js/main.4bc3ded2.js",
+    "index.html": "/Auth-Router-Post/index.html",
+    "main.e6c13ad2.css.map": "/Auth-Router-Post/static/css/main.e6c13ad2.css.map",
+    "main.4bc3ded2.js.map": "/Auth-Router-Post/static/js/main.4bc3ded2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4bc3ded2.js"
+  ]
+}
