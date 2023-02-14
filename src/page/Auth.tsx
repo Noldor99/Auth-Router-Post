@@ -1,4 +1,4 @@
- import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { PrimaryButton } from "../components/UI/PrimaryButton";
 import { MainContainer } from "../components/UI/MainContainer";
@@ -27,7 +27,7 @@ interface UserSubmitForm {
 
 
 const Auth = () => {
- 
+
 
   const navigate = useNavigate();
 
@@ -36,9 +36,9 @@ const Auth = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data: UserSubmitForm ) => {
+  const onSubmit = (data: UserSubmitForm) => {
     // dispatch(setData(data))
-    navigate("home/home");
+    navigate("home");
   };
 
   return (
@@ -52,17 +52,17 @@ const Auth = () => {
           id="firstName"
           type="text"
           label="First Name"
-          error = {!!errors.firstName}
-          helperText = {errors?.firstName?.message}
-          /> 
+          error={!!errors.firstName}
+          helperText={errors?.firstName?.message}
+        />
         <Input
           {...register('lastName')}
           id="lastName"
           type="text"
           label="Last Name"
-          error = {!!errors.lastName}
-          helperText = {errors?.lastName?.message}
-        /> 
+          error={!!errors.lastName}
+          helperText={errors?.lastName?.message}
+        />
         <PrimaryButton>Next</PrimaryButton>
       </Form>
     </MainContainer>

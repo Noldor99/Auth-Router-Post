@@ -24,7 +24,7 @@ interface HeaderProps {
 
 const drawerWidth = 240;
 // const navItems = ['Home', 'About', 'Contact'];
-const navItems = [{ nameLink: 'Auth', link: '/' }, { nameLink: 'Home', link: 'home' }, { nameLink: 'Posts', link: 'posts' }];
+const navItems = [{ nameLink: 'Auth', link: 'Auth-Router-Post' }, { nameLink: 'Home', link: '' }, { nameLink: 'Posts', link: 'posts' }];
 
 const Header = (props: HeaderProps) => {
   const { window } = props;

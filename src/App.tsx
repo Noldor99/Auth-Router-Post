@@ -15,12 +15,12 @@ const App = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<Auth />} />
+        <Route path="Auth-Router-Post" element={<Auth />} />
         <Route path="userdetails/:id" element={<UserDetails />} />
         <Route path="mockdetails/:id" element={<MockDetails />} />
-
-        <Route path="home" element={<Mainlayout />}>
-          <Route path="home" element={<Home />} />
+ 
+        <Route path="Auth-Router-Post/home" element={<Mainlayout />}>
+          <Route index element={<Home />} />
           <Route path="posts" element={<Posts />} />
           <Route path="cart/:id" element={<Cart />} />
         </Route>

@@ -92,7 +92,7 @@ const Cart = () => {
             </Box>
             <Button
               size="small"
-              onClick={() => navigate("/home/home")}
+              onClick={() => navigate(-1)}
             >Go bask</Button>
           </Box>
         </List>
